@@ -1,0 +1,104 @@
+<!doctype html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8" />
+    <title>Making your first Phaser 3 Game - Part 10</title>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.11.0/dist/phaser.js"></script>
+	 <script src="https://cdn.jsdelivr.net/npm/phaser@3.15.1/dist/phaser-arcade-physics.min.js"></script>
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<script type="text/javascript">
+
+var config = {
+	// type = Phaser.CANVAS, Phaser.WEBGL, or Phaser.AUTO ( rendering context that you want to use for your game)
+	type: Phaser.AUTO, //Phaser.AUTO tries WEBGL, if not supported then CANVAS
+    width: 800,
+    height: 600,
+	physics: {
+        default: 'arcade',
+        arcade: {
+            gravity: { y: 300 },
+            debug: false
+        }
+    },
+	// Scene extends infinitely in all directions
+	// Can put objects off screen
+    scene: {
+        preload: preload,
+        create: create,
+        update: update
+    }
+};
+
+
+var game = new Phaser.Game(config);
+var monsters;
+var cursors;
+
+function preload ()
+{
+	this.load.multiatlas('monsters', 'assets/monsters.json', 'assets');
+}
+
+function create ()
+{
+    monsters = this.physics.add.sprite(0, 400, 'monsters', 'monsters/stone/1.png');
+	monsters.setCollideWorldBounds(true);
+    //monsters.setScale(0.8, 0.8);
+	
+	var walkFrames = this.anims.generateFrameNames('monsters', {
+                         start: 1, end: 8, zeroPad: 1,
+                         prefix: 'stone/walk/', suffix: '.png'
+                     });
+					 
+	this.anims.create({ key: 'right', frames: walkFrames, frameRate: 5, repeat: -1 });
+    monsters.anims.play('right');
+	
+	var walkLeftFrames = this.anims.generateFrameNames('monsters', {
+                         start: 1, end: 8, zeroPad: 1,
+                         prefix: 'stone/walkLeft/', suffix: '.png'
+                     });
+					 
+	this.anims.create({ key: 'left', frames: walkLeftFrames, frameRate: 5, repeat: -1 });
+    monsters.anims.play('left');
+	
+	
+	
+	//  Populates cursors objects with four properties:, up,down,left,right
+    cursors = this.input.keyboard.createCursorKeys();
+}
+
+	
+function update()
+{
+    if (cursors.right.isDown)
+    {
+        monsters.setVelocityX(160);
+
+        monsters.anims.play('right', true);
+    }
+	else if (cursors.left.isDown)
+	{
+		monsters.setVelocityX(-160);
+
+        monsters.anims.play('left', true);
+	}
+	else
+    {
+        monsters.setVelocityX(0);
+		monsters.anims.pause(monsters.anims.currentAnim.frames[2]);
+    }
+	
+}
+
+
+</script>
+
+</body>
+</html>
