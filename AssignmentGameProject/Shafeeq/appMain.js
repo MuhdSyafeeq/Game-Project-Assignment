@@ -131,7 +131,7 @@ function create()
     // --> Collectibles
 
     // ---> Score Marks
-    scoreText = this.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: '#FFF' });
+    scoreText = this.add.text(16, 16, 'score: 0', { fontSize: '16px', fill: '#FFF' });
     // ---> Score Marks
 
     // --> Camera
@@ -141,8 +141,8 @@ function create()
     // --> Camera
 
     // --> Cooldown Interface
-    jpText = this.add.text(16, 58, 'Jump Limit: 2', { fontSize: '32px', fill: '#FFF' });
-    cdText = this.add.text(16, 36, 'Cooldown: 0', { fontSize: '32px', fill: '#FFF' });
+    jpText = this.add.text(16, 58, 'Jump Limit: 2', { fontSize: '16px', fill: '#FFF' });
+    cdText = this.add.text(16, 36, 'Cooldown: 0', { fontSize: '16px', fill: '#FFF' });
     // --> Cooldown Interface
 
 }
