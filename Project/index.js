@@ -51,7 +51,7 @@ function preload() {
 	
 	this.load.image("background","assets/images/4.png");
 	this.load.image("background2","assets/images/3.png");
-	this.load.image("star","assets/images/coin.png");
+	this.load.image("star","assets/images/star2.png");
 	this.load.tilemapTiledJSON("level1","assets/tileMap/LevelA2.json");
 	this.load.image("tileSet","assets/tileSet/TilesSet16x16(E).png");
 	this.load.multiatlas('player', 'assets/mainCharacter.json', 'assets');
