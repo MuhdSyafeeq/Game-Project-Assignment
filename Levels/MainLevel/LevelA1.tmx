@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.3.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="72" height="32" tilewidth="8" tileheight="8" infinite="0" nextlayerid="3" nextobjectid="1">
+<map version="1.2" tiledversion="1.3.2" orientation="orthogonal" renderorder="right-down" compressionlevel="-1" width="72" height="32" tilewidth="8" tileheight="8" infinite="0" nextlayerid="3" nextobjectid="1">
  <tileset firstgid="1" name="tiles-1" tilewidth="8" tileheight="8" tilecount="13338" columns="114">
   <image source="test.png" width="914" height="936"/>
  </tileset>
@@ -7,7 +7,7 @@
   <image source="tileset32x32.png" width="320" height="192"/>
  </tileset>
  <tileset firstgid="14299" name="tiles-4" tilewidth="8" tileheight="8" tilecount="12288" columns="128">
-  <image source="../../../../Levels/MainLevel/bricks3db16.png" width="1024" height="768"/>
+  <image source="C:/Users/User/Desktop/PROTOTYPE/Game Design/Assignment/bricks3db16.png" width="1024" height="768"/>
  </tileset>
  <tileset firstgid="26587" name="spikes" tilewidth="8" tileheight="8" tilecount="75" columns="15">
   <image source="C:/Users/User/Desktop/PROTOTYPE/Game Design/Game Nuggets/Entities/Spikes.png" width="122" height="41"/>
