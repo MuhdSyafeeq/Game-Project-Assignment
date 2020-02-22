@@ -109,7 +109,7 @@ function create() {
 */
 	
 	//Fire creation + animation
-	fire = this.physics.add.sprite(150, 400, 'object', 'fire/Fogo_1.png');
+	fire = this.physics.add.sprite(150, 450, 'object', 'fire/Fogo_1.png');
 	
 	var fireFrames = this.anims.generateFrameNames('object', {
                          start: 1, end: 4, zeroPad: 1,
@@ -137,16 +137,16 @@ function create() {
 	//Overlap with fire
 	this.physics.add.overlap(player, fire, burnDamage, null, this);
 	
-	
-	//Camera
-	this.cameras.main.startFollow(player).setFollowOffset(-250, 50).setZoom(1.8); //Camera follows player
-	
 	//Simple healthbar (text based)
-	healthText = this.add.text(400, 80, `Health: ${health}`, {
+	healthText = this.add.text(1100, 280, `Health: ${health}`, {
       fontSize: '20px',
       fill: '#ffffff'
     });
     healthText.setScrollFactor(0);
+	
+	//Camera
+	this.cameras.main.startFollow(player).setFollowOffset(-250, 50).setZoom(1.8); //Camera follows player
+	
 	
 	// Check for collision before check for input
 	//  Populates cursors objects with four properties:, up,down,left,right
@@ -201,7 +201,7 @@ function burnDamage(player, fire){
 	//player.anims.play('hurt');
 	if (!burnStatus){
 		player.setTint(0xff0000); // set player color
-		healthText--;
+		health--;
 		burnStatus = true;
 		updateHealth();
 	}
@@ -209,7 +209,7 @@ function burnDamage(player, fire){
 }
 
 function updateHealth (){
-	text.setText(`Health: ${health}`);
+	healthText.setText(`Health: ${health}`);
 	if (health === 0){
 		 gameOver = true; 
 	}
