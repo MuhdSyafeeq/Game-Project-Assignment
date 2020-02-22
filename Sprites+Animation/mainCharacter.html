@@ -1,0 +1,137 @@
+<!doctype html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8" />
+    <title>Making your first Phaser 3 Game - Part 10</title>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.11.0/dist/phaser.js"></script>
+	 <script src="https://cdn.jsdelivr.net/npm/phaser@3.15.1/dist/phaser-arcade-physics.min.js"></script>
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<script type="text/javascript">
+
+var config = {
+	// type = Phaser.CANVAS, Phaser.WEBGL, or Phaser.AUTO ( rendering context that you want to use for your game)
+	type: Phaser.AUTO, //Phaser.AUTO tries WEBGL, if not supported then CANVAS
+    width: 800,
+    height: 600,
+	physics: {
+        default: 'arcade',
+        arcade: {
+            gravity: { y: 300 },
+            debug: false
+        }
+    },
+	// Scene extends infinitely in all directions
+	// Can put objects off screen
+    scene: {
+        preload: preload,
+        create: create,
+        update: update
+    }
+};
+
+
+var game = new Phaser.Game(config);
+var mainCharacter;
+var cursors;
+
+function preload ()
+{
+	this.load.multiatlas('mainCharacter', 'assets/mainCharacter.json', 'assets');
+	
+}
+
+function create ()
+{
+    mainCharacter = this.physics.add.sprite(0, 400, 'mainCharacter', 'Walking/0_Golem_Walking_000.png');
+	mainCharacter.setCollideWorldBounds(true);
+    //mainCharacter.setScale(0.5, 0.5);
+	
+	var walkFrames = this.anims.generateFrameNames('mainCharacter', {
+                         start: 1, end: 23, zeroPad: 3,
+                         prefix: 'Walking/0_Golem_Walking_', suffix: '.png'
+                     });
+					 
+	this.anims.create({ key: 'right', frames: walkFrames, frameRate: 10, repeat: -1 });
+    mainCharacter.anims.play('right');
+	
+	var idleFrames = this.anims.generateFrameNames('mainCharacter', {
+                         start: 1, end: 17, zeroPad: 3,
+                         prefix: 'Idle_Blinking/0_Golem_Idle Blinking_', suffix: '.png'
+                     });
+	this.anims.create({ key: 'idle', frames: idleFrames, frameRate: 10, repeat: -1 });
+    mainCharacter.anims.play('idle');
+	
+	var walkLeftFrames = this.anims.generateFrameNames('mainCharacter', {
+                         start: 1, end: 23, zeroPad: 3,
+                         prefix: 'WalkingLeft/0_Golem_Walking_', suffix: '.png'
+                     });
+					 
+	this.anims.create({ key: 'left', frames: walkLeftFrames, frameRate: 10, repeat: -1 });
+    mainCharacter.anims.play('left');
+	
+	var jumpFrames = this.anims.generateFrameNames('mainCharacter', {
+                         start: 1, end: 5, zeroPad: 3,
+                         prefix: 'Jump_Start/0_Golem_Jump Start_', suffix: '.png'
+                     });
+					 
+	this.anims.create({ key: 'jump', frames: jumpFrames, frameRate: 10, repeat: -1 });
+    mainCharacter.anims.play('jump');
+	/*
+	var doubleJumpFrames = this.anims.generateFrameNames('mainCharacter', {
+                         start: 1, end: 5, zeroPad: 3,
+                         prefix: 'Jump_Loop/0_Golem_Jump_Loop_', suffix: '.png'
+                     });
+					 
+	this.anims.create({ key: 'doubleJump', frames: doubleJumpFrames, frameRate: 10, repeat: -1 });
+    mainCharacter.anims.play('doubleJump');*/
+	
+	//  Populates cursors objects with four properties:, up,down,left,right
+    cursors = this.input.keyboard.createCursorKeys();
+}
+
+	
+function update()
+{
+    if (cursors.right.isDown)
+    {
+        mainCharacter.setVelocityX(160);
+
+        mainCharacter.anims.play('right', true);
+    }
+	else if (cursors.left.isDown)
+	{
+		mainCharacter.setVelocityX(-160);
+		mainCharacter.anims.play('left', true);
+	}
+	else
+    {
+        mainCharacter.setVelocityX(0);
+
+        mainCharacter.anims.play('idle', true);
+    }
+	
+	// mainCharacter.body.touching.down -> on the floor; else, can jump mid-air
+	if (cursors.up.isDown && mainCharacter.body.touching.down)
+	{
+		mainCharacter.setVelocityY(-260);
+		mainCharacter.anims.play('jump', true);
+		/* Double jump
+		if (cursors.up.isDown){
+			mainCharacter.setVelocityY(-160);
+			mainCharacter.anims.play('doubleJump', true);
+		}*/
+	}
+}
+
+
+</script>
+
+</body>
+</html>

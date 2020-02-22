@@ -1,0 +1,44 @@
+ I'm using multiple scenes on a game, I'm using a scene (each one in it's own file) for the following:
+
+- Game itself
+
+- home screen
+
+https://www.html5gamedevs.com/topic/37822-recommendations-on-breaking-up-scenes/
+
+- loading screen
+
+- a "boot" scene where I load the logo that I want to show in the loading screen
+
+I'm using mainly in ES5 and loading the files in this manner:
+
+<!-- index.html -->
+<script src="js/scenes/bootScene.js"></script>
+  <script src="js/scenes/loadingScene.js"></script>
+  <script src="js/scenes/homeScene.js"></script>
+  <script src="js/scenes/gameScene.js"></script>
+  <script src="js/main.js"></script>
+
+Each scene file looks like so:
+
+// create a new scene
+let homeScene = new Phaser.Scene('Home');
+
+homeScene.create = function(){
+  // game background, with active input
+  let bg = this.add.sprite(0, 0, 'backyard').setInteractive();
+  bg.setOrigin(0, 0);
+ETC...
+
+Adding them to my game like so:
+
+// our game's configuration
+let config = {
+  type: Phaser.AUTO,
+  width: 360,
+  height: 640,
+  scene: [bootScene, loadingScene, homeScene, gameScene],
+  title: 'Virtual Pet',
+  pixelArt: false,
+  backgroundColor: 'ffffff'
+};
