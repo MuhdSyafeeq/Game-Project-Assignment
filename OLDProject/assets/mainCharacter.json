@@ -1,0 +1,1658 @@
+{
+	"textures": [
+		{
+			"image": "mainCharacter.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 872,
+				"h": 238
+			},
+			"scale": 0.5,
+			"frames": [
+				{
+					"filename": "Walking/0_Golem_Walking_001.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 23,
+						"y": 21,
+						"w": 42,
+						"h": 56
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 42,
+						"h": 56
+					}
+				},
+				{
+					"filename": "Walking/0_Golem_Walking_002.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 23,
+						"y": 21,
+						"w": 42,
+						"h": 56
+					},
+					"frame": {
+						"x": 45,
+						"y": 1,
+						"w": 42,
+						"h": 56
+					}
+				},
+				{
+					"filename": "Walking/0_Golem_Walking_011.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 21,
+						"w": 43,
+						"h": 56
+					},
+					"frame": {
+						"x": 89,
+						"y": 1,
+						"w": 43,
+						"h": 56
+					}
+				},
+				{
+					"filename": "Walking/0_Golem_Walking_012.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 23,
+						"y": 21,
+						"w": 42,
+						"h": 56
+					},
+					"frame": {
+						"x": 134,
+						"y": 1,
+						"w": 42,
+						"h": 56
+					}
+				},
+				{
+					"filename": "Walking/0_Golem_Walking_013.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 23,
+						"y": 21,
+						"w": 42,
+						"h": 56
+					},
+					"frame": {
+						"x": 178,
+						"y": 1,
+						"w": 42,
+						"h": 56
+					}
+				},
+				{
+					"filename": "Walking/0_Golem_Walking_014.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 23,
+						"y": 21,
+						"w": 42,
+						"h": 56
+					},
+					"frame": {
+						"x": 222,
+						"y": 1,
+						"w": 42,
+						"h": 56
+					}
+				},
+				{
+					"filename": "WalkingLeft/0_Golem_Walking_001.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 25,
+						"y": 21,
+						"w": 42,
+						"h": 56
+					},
+					"frame": {
+						"x": 266,
+						"y": 1,
+						"w": 42,
+						"h": 56
+					}
+				},
+				{
+					"filename": "WalkingLeft/0_Golem_Walking_002.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 25,
+						"y": 21,
+						"w": 42,
+						"h": 56
+					},
+					"frame": {
+						"x": 310,
+						"y": 1,
+						"w": 42,
+						"h": 56
+					}
+				},
+				{
+					"filename": "WalkingLeft/0_Golem_Walking_011.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 25,
+						"y": 21,
+						"w": 43,
+						"h": 56
+					},
+					"frame": {
+						"x": 354,
+						"y": 1,
+						"w": 43,
+						"h": 56
+					}
+				},
+				{
+					"filename": "WalkingLeft/0_Golem_Walking_012.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 25,
+						"y": 21,
+						"w": 42,
+						"h": 56
+					},
+					"frame": {
+						"x": 399,
+						"y": 1,
+						"w": 42,
+						"h": 56
+					}
+				},
+				{
+					"filename": "WalkingLeft/0_Golem_Walking_013.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 25,
+						"y": 21,
+						"w": 42,
+						"h": 56
+					},
+					"frame": {
+						"x": 443,
+						"y": 1,
+						"w": 42,
+						"h": 56
+					}
+				},
+				{
+					"filename": "WalkingLeft/0_Golem_Walking_014.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 25,
+						"y": 21,
+						"w": 42,
+						"h": 56
+					},
+					"frame": {
+						"x": 487,
+						"y": 1,
+						"w": 42,
+						"h": 56
+					}
+				},
+				{
+					"filename": "Idle_Blinking/0_Golem_Idle Blinking_000.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 21,
+						"y": 20,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 531,
+						"y": 1,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "Idle_Blinking/0_Golem_Idle Blinking_001.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 21,
+						"y": 20,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 575,
+						"y": 1,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "Idle_Blinking/0_Golem_Idle Blinking_002.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 21,
+						"y": 20,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 619,
+						"y": 1,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "Idle_Blinking/0_Golem_Idle Blinking_003.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 21,
+						"y": 20,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 663,
+						"y": 1,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "Idle_Blinking/0_Golem_Idle Blinking_004.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 21,
+						"y": 20,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 707,
+						"y": 1,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "Idle_Blinking/0_Golem_Idle Blinking_005.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 21,
+						"y": 20,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 751,
+						"y": 1,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "Idle_Blinking/0_Golem_Idle Blinking_006.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 21,
+						"y": 20,
+						"w": 41,
+						"h": 57
+					},
+					"frame": {
+						"x": 795,
+						"y": 1,
+						"w": 41,
+						"h": 57
+					}
+				},
+				{
+					"filename": "Idle_Blinking/0_Golem_Idle Blinking_007.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 21,
+						"y": 20,
+						"w": 41,
+						"h": 57
+					},
+					"frame": {
+						"x": 1,
+						"y": 59,
+						"w": 41,
+						"h": 57
+					}
+				},
+				{
+					"filename": "Idle_Blinking/0_Golem_Idle Blinking_008.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 21,
+						"y": 20,
+						"w": 41,
+						"h": 57
+					},
+					"frame": {
+						"x": 44,
+						"y": 59,
+						"w": 41,
+						"h": 57
+					}
+				},
+				{
+					"filename": "Idle_Blinking/0_Golem_Idle Blinking_009.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 20,
+						"y": 20,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 87,
+						"y": 59,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "Idle_Blinking/0_Golem_Idle Blinking_010.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 20,
+						"y": 20,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 131,
+						"y": 59,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "Idle_Blinking/0_Golem_Idle Blinking_011.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 20,
+						"y": 20,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 175,
+						"y": 59,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "Idle_Blinking/0_Golem_Idle Blinking_012.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 20,
+						"y": 20,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 219,
+						"y": 59,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "Idle_Blinking/0_Golem_Idle Blinking_013.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 21,
+						"y": 20,
+						"w": 41,
+						"h": 57
+					},
+					"frame": {
+						"x": 263,
+						"y": 59,
+						"w": 41,
+						"h": 57
+					}
+				},
+				{
+					"filename": "Idle_Blinking/0_Golem_Idle Blinking_014.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 21,
+						"y": 20,
+						"w": 41,
+						"h": 57
+					},
+					"frame": {
+						"x": 306,
+						"y": 59,
+						"w": 41,
+						"h": 57
+					}
+				},
+				{
+					"filename": "Idle_Blinking/0_Golem_Idle Blinking_015.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 21,
+						"y": 20,
+						"w": 41,
+						"h": 57
+					},
+					"frame": {
+						"x": 349,
+						"y": 59,
+						"w": 41,
+						"h": 57
+					}
+				},
+				{
+					"filename": "Idle_Blinking/0_Golem_Idle Blinking_016.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 21,
+						"y": 20,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 392,
+						"y": 59,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "Idle_Blinking/0_Golem_Idle Blinking_017.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 21,
+						"y": 20,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 436,
+						"y": 59,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "Jump_Start/0_Golem_Jump Start_000.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 21,
+						"y": 20,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 480,
+						"y": 59,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "Walking/0_Golem_Walking_000.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 23,
+						"y": 21,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 524,
+						"y": 60,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "Walking/0_Golem_Walking_003.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 20,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 568,
+						"y": 60,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "Walking/0_Golem_Walking_004.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 20,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 612,
+						"y": 60,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "Walking/0_Golem_Walking_005.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 20,
+						"w": 41,
+						"h": 57
+					},
+					"frame": {
+						"x": 656,
+						"y": 60,
+						"w": 41,
+						"h": 57
+					}
+				},
+				{
+					"filename": "Walking/0_Golem_Walking_008.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 21,
+						"y": 20,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 699,
+						"y": 60,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "Walking/0_Golem_Walking_009.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 20,
+						"w": 41,
+						"h": 57
+					},
+					"frame": {
+						"x": 743,
+						"y": 60,
+						"w": 41,
+						"h": 57
+					}
+				},
+				{
+					"filename": "Walking/0_Golem_Walking_010.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 20,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 786,
+						"y": 60,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "Walking/0_Golem_Walking_021.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 20,
+						"w": 41,
+						"h": 57
+					},
+					"frame": {
+						"x": 830,
+						"y": 60,
+						"w": 41,
+						"h": 57
+					}
+				},
+				{
+					"filename": "Walking/0_Golem_Walking_015.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 20,
+						"w": 43,
+						"h": 57
+					},
+					"frame": {
+						"x": 1,
+						"y": 118,
+						"w": 43,
+						"h": 57
+					}
+				},
+				{
+					"filename": "Walking/0_Golem_Walking_016.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 20,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 46,
+						"y": 118,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "Walking/0_Golem_Walking_017.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 20,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 90,
+						"y": 118,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "Walking/0_Golem_Walking_018.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 21,
+						"y": 20,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 134,
+						"y": 118,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "Walking/0_Golem_Walking_019.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 21,
+						"y": 20,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 178,
+						"y": 118,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "Walking/0_Golem_Walking_020.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 21,
+						"y": 20,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 222,
+						"y": 118,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "Walking/0_Golem_Walking_022.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 20,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 266,
+						"y": 118,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "Walking/0_Golem_Walking_023.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 21,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 310,
+						"y": 118,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "WalkingLeft/0_Golem_Walking_000.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 25,
+						"y": 21,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 354,
+						"y": 118,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "WalkingLeft/0_Golem_Walking_003.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 26,
+						"y": 20,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 398,
+						"y": 118,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "WalkingLeft/0_Golem_Walking_004.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 26,
+						"y": 20,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 442,
+						"y": 118,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "WalkingLeft/0_Golem_Walking_005.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 27,
+						"y": 20,
+						"w": 41,
+						"h": 57
+					},
+					"frame": {
+						"x": 486,
+						"y": 119,
+						"w": 41,
+						"h": 57
+					}
+				},
+				{
+					"filename": "WalkingLeft/0_Golem_Walking_008.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 27,
+						"y": 20,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 529,
+						"y": 119,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "WalkingLeft/0_Golem_Walking_009.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 27,
+						"y": 20,
+						"w": 41,
+						"h": 57
+					},
+					"frame": {
+						"x": 573,
+						"y": 119,
+						"w": 41,
+						"h": 57
+					}
+				},
+				{
+					"filename": "WalkingLeft/0_Golem_Walking_010.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 26,
+						"y": 20,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 616,
+						"y": 119,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "WalkingLeft/0_Golem_Walking_015.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 25,
+						"y": 20,
+						"w": 43,
+						"h": 57
+					},
+					"frame": {
+						"x": 660,
+						"y": 119,
+						"w": 43,
+						"h": 57
+					}
+				},
+				{
+					"filename": "WalkingLeft/0_Golem_Walking_016.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 26,
+						"y": 20,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 705,
+						"y": 119,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "WalkingLeft/0_Golem_Walking_017.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 26,
+						"y": 20,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 749,
+						"y": 119,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "WalkingLeft/0_Golem_Walking_018.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 27,
+						"y": 20,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 793,
+						"y": 119,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "WalkingLeft/0_Golem_Walking_019.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 27,
+						"y": 20,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 1,
+						"y": 177,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "WalkingLeft/0_Golem_Walking_020.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 27,
+						"y": 20,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 45,
+						"y": 177,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "WalkingLeft/0_Golem_Walking_021.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 27,
+						"y": 20,
+						"w": 41,
+						"h": 57
+					},
+					"frame": {
+						"x": 89,
+						"y": 177,
+						"w": 41,
+						"h": 57
+					}
+				},
+				{
+					"filename": "WalkingLeft/0_Golem_Walking_022.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 26,
+						"y": 20,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 132,
+						"y": 177,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "WalkingLeft/0_Golem_Walking_023.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 26,
+						"y": 21,
+						"w": 42,
+						"h": 57
+					},
+					"frame": {
+						"x": 176,
+						"y": 177,
+						"w": 42,
+						"h": 57
+					}
+				},
+				{
+					"filename": "Jump_Start/0_Golem_Jump Start_001.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 21,
+						"y": 19,
+						"w": 41,
+						"h": 58
+					},
+					"frame": {
+						"x": 220,
+						"y": 177,
+						"w": 41,
+						"h": 58
+					}
+				},
+				{
+					"filename": "Jump_Start/0_Golem_Jump Start_002.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 20,
+						"y": 18,
+						"w": 41,
+						"h": 58
+					},
+					"frame": {
+						"x": 263,
+						"y": 177,
+						"w": 41,
+						"h": 58
+					}
+				},
+				{
+					"filename": "Jump_Start/0_Golem_Jump Start_003.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 20,
+						"y": 17,
+						"w": 41,
+						"h": 58
+					},
+					"frame": {
+						"x": 306,
+						"y": 177,
+						"w": 41,
+						"h": 58
+					}
+				},
+				{
+					"filename": "Jump_Start/0_Golem_Jump Start_005.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 19,
+						"y": 16,
+						"w": 40,
+						"h": 58
+					},
+					"frame": {
+						"x": 349,
+						"y": 177,
+						"w": 40,
+						"h": 58
+					}
+				},
+				{
+					"filename": "Walking/0_Golem_Walking_006.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 21,
+						"y": 19,
+						"w": 42,
+						"h": 58
+					},
+					"frame": {
+						"x": 391,
+						"y": 177,
+						"w": 42,
+						"h": 58
+					}
+				},
+				{
+					"filename": "Walking/0_Golem_Walking_007.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 21,
+						"y": 19,
+						"w": 42,
+						"h": 58
+					},
+					"frame": {
+						"x": 435,
+						"y": 177,
+						"w": 42,
+						"h": 58
+					}
+				},
+				{
+					"filename": "WalkingLeft/0_Golem_Walking_006.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 27,
+						"y": 19,
+						"w": 42,
+						"h": 58
+					},
+					"frame": {
+						"x": 479,
+						"y": 178,
+						"w": 42,
+						"h": 58
+					}
+				},
+				{
+					"filename": "WalkingLeft/0_Golem_Walking_007.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 27,
+						"y": 19,
+						"w": 42,
+						"h": 58
+					},
+					"frame": {
+						"x": 523,
+						"y": 178,
+						"w": 42,
+						"h": 58
+					}
+				},
+				{
+					"filename": "Jump_Loop/0_Golem_Jump Loop_000.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 19,
+						"y": 15,
+						"w": 40,
+						"h": 59
+					},
+					"frame": {
+						"x": 567,
+						"y": 178,
+						"w": 40,
+						"h": 59
+					}
+				},
+				{
+					"filename": "Jump_Loop/0_Golem_Jump Loop_001.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 19,
+						"y": 15,
+						"w": 40,
+						"h": 59
+					},
+					"frame": {
+						"x": 609,
+						"y": 178,
+						"w": 40,
+						"h": 59
+					}
+				},
+				{
+					"filename": "Jump_Loop/0_Golem_Jump Loop_002.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 19,
+						"y": 15,
+						"w": 40,
+						"h": 59
+					},
+					"frame": {
+						"x": 651,
+						"y": 178,
+						"w": 40,
+						"h": 59
+					}
+				},
+				{
+					"filename": "Jump_Loop/0_Golem_Jump Loop_003.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 19,
+						"y": 15,
+						"w": 40,
+						"h": 59
+					},
+					"frame": {
+						"x": 693,
+						"y": 178,
+						"w": 40,
+						"h": 59
+					}
+				},
+				{
+					"filename": "Jump_Loop/0_Golem_Jump Loop_004.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 19,
+						"y": 15,
+						"w": 40,
+						"h": 59
+					},
+					"frame": {
+						"x": 735,
+						"y": 178,
+						"w": 40,
+						"h": 59
+					}
+				},
+				{
+					"filename": "Jump_Loop/0_Golem_Jump Loop_005.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 19,
+						"y": 15,
+						"w": 40,
+						"h": 59
+					},
+					"frame": {
+						"x": 777,
+						"y": 178,
+						"w": 40,
+						"h": 59
+					}
+				},
+				{
+					"filename": "Jump_Start/0_Golem_Jump Start_004.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 19,
+						"y": 16,
+						"w": 41,
+						"h": 59
+					},
+					"frame": {
+						"x": 819,
+						"y": 178,
+						"w": 41,
+						"h": 59
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:8d72c2c10e9f24a43afca292c4ee8a69:790b2ac4e51acba9ae15b859adfd2ddf:660e6d29a166a53b16a919318e747652$"
+	}
+}

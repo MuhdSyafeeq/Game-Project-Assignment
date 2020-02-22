@@ -1,12 +1,13 @@
+
 const config = {
   type: Phaser.AUTO, // Which renderer to use
-  width: 1600, // Canvas width in pixels
-  height: 1120, // Canvas height in pixels
+  width: 800, // Canvas width in pixels
+  height: 600, // Canvas height in pixels
   parent: "game-container", // ID of the DOM element to add the canvas to
   physics: {
     default: "arcade",
     arcade: {
-      gravity: { y: 300 }, // Top down game, so no gravity
+      gravity: { y: 600 }, // Top down game, so no gravity
 	  debug: true
     }
   },
@@ -21,46 +22,41 @@ const game = new Phaser.Game(config);
 var player;
 var cursors;
 var fire;
-var health = 3;
-var healthText;
+var healthText = 3;
 var gameOver = false;
 var burnStatus = false;
 var refreshStatus = 0;
-var jumpLimit;
-
 function preload() {
 	// Runs once, loads up assets like images and audio
 	this.load.image("background","assets/images/4.png");
 	this.load.image("background2","assets/images/3.png");
-	this.load.tilemapTiledJSON("level1","assets/tileMap/LevelA2.json");
-	this.load.image("tileSet","assets/tileSet/TilesSet16x16(E).png");
+	this.load.tilemapTiledJSON("level0","assets/tileMap/Level0.json");
+	this.load.image("tileSet","assets/tileSet/tileset32x32.png");
 	this.load.multiatlas('player', 'assets/mainCharacter.json', 'assets');
 	this.load.multiatlas('object', 'assets/object.json', 'assets');  
 }
 
 function create() {
 	// Runs once, after all assets in preload are loaded
-	this.add.image (0,0,"background").setOrigin(0,0);
-	this.add.image (0,0,"background2").setOrigin(0,0);
-	
-	
-	map = this.make.tilemap({ key: "level1" });
-	
+	this.add.image (0,0,"background").setOrigin(0,0).setScale(0.9);
+	this.add.image (0,0,"background2").setOrigin(0,0).setScale(0.9);
+	map = this.make.tilemap({ key: "level0" });
+
+
 	// Parameters are the name you gave the tileset in Tiled and then the key of the tileset image in
 	// Phaser's cache (i.e. the name you used in preload)
-	tileset = map.addTilesetImage("TilesSet16x16(E)", "tileSet");
+	tileset = map.addTilesetImage("tiles-1", "tileSet");
 
 	// Parameters: layer name (or index) from Tiled, tileset, x, y
-	behindLayer = map.createStaticLayer("World Background", tileset, 0, 0);
-
-	worldLayer = map.createStaticLayer("Player Path", tileset, 0, 0);
+	worldLayer = map.createStaticLayer("World", tileset, 0, 360).setScale(1.57);
+	worldLayer.setCollisionByProperty({ collides: true });
 	
-	spawnPoint = map.findObject("SpawnPoint", obj => obj.name === "Spawn Point");
+	behindLayer = map.createStaticLayer("Behind Player", tileset, 0, 360).setScale(1.57);
+	spawnPoint = map.findObject("Objects", obj => obj.name === "Spawn Point");
 	
 	//Player creation + animation
-	player = this.physics.add.sprite(spawnPoint.x, spawnPoint.y-10, 'player', 'Walking/0_Golem_Walking_000.png');
+	player = this.physics.add.sprite(spawnPoint.x+75, spawnPoint.y+410, 'player', 'Walking/0_Golem_Walking_000.png');
 	player.setSize(40,60, true);
-	
 	var walkFrames = this.anims.generateFrameNames('player', {
                          start: 1, end: 23, zeroPad: 3,
                          prefix: 'Walking/0_Golem_Walking_', suffix: '.png'
@@ -90,16 +86,7 @@ function create() {
 					 
 	this.anims.create({ key: 'jump', frames: jumpFrames, frameRate: 10, repeat: -1 });
 	player.anims.play('jump');
-/*	
-	var doubleJumpFrames = this.anims.generateFrameNames('player', {
-                         start: 1, end: 5, zeroPad: 3,
-                         prefix: 'Jump_Loop/0_Golem_Jump_Loop_', suffix: '.png'
-                     });
-					 
-	this.anims.create({ key: 'doubleJump', frames: doubleJumpFrames, frameRate: 10, repeat: -1 });
-    player.anims.play('doubleJump');
-	
-	
+	/*
 	var hurtFrames = this.anims.generateFrameNames('player', {
                          start: 1, end: 11, zeroPad: 3,
                          prefix: 'Hurt/0_Golem_Hurt_', suffix: '.png'
@@ -122,40 +109,38 @@ function create() {
 	fire.body.offset.y = 115;
 	fire.body.offset.x = 110;
 	
-	//Collision
+	//  Populates cursors objects with four properties:, up,down,left,right
+	cursors = this.input.keyboard.createCursorKeys();
+
 	//this.physics.arcade.enable(player);
-	worldLayer.setCollisionByExclusion(-1, true);
 	player.setCollideWorldBounds(true);
 	player.setBounce(0.2);
 	
-	// To simulate gravity on a sprite 
-	player.body.setGravityY(160);
-	
+	//Collision
 	this.physics.add.collider(player, worldLayer);
 	this.physics.add.collider(fire, worldLayer);
 
 	//Overlap with fire
-	this.physics.add.overlap(player, fire, burnDamage, null, this);
-	
+	this.physics.add.overlap(player, fire, burnStatusDamage, null, this);
 	
 	//Camera
-	this.cameras.main.startFollow(player).setFollowOffset(-250, 50).setZoom(1.8); //Camera follows player
+	this.cameras.main.startFollow(player).setFollowOffset(-250, 100).setZoom(1.3); //Camera follows player
+
+	// To simulate gravity on a sprite 
+	player.body.setGravityY(3000); 
 	
 	//Simple healthbar (text based)
-	healthText = this.add.text(400, 80, `Health: ${health}`, {
+	text = this.add.text(570, 70, `Health: ${healthText}`, {
       fontSize: '20px',
       fill: '#ffffff'
     });
-    healthText.setScrollFactor(0);
-	
-	// Check for collision before check for input
-	//  Populates cursors objects with four properties:, up,down,left,right
-	cursors = this.input.keyboard.createCursorKeys();
+    text.setScrollFactor(0);
 	
 }
 
 function update(time, delta) {
-
+	// Stop any previous movement from the last frame
+	player.body.setVelocity(0);
 	refreshStatus+= 0.25;
 	
 	if (refreshStatus % 10 == 0){
@@ -188,16 +173,21 @@ function update(time, delta) {
         player.anims.play('idle', true);
     }
 	
-	
 	// player.body.touching.down -> on the floor; else, can jump mid-air
-    if (cursors.up.isDown && player.body.onFloor()) // jump
-    {
-        player.setVelocityY(-280);
-    }
+	if (cursors.up.isDown )
+	{
+		player.setVelocityY(-260);
+		player.anims.play('jump', true);
+		/* Double jump
+		if (cursors.up.isDown){
+			player.setVelocityY(-160);
+			player.anims.play('doubleJump', true);
+		}*/
+	}
+	
 }
 
-
-function burnDamage(player, fire){
+function burnStatusDamage(player, fire){
 	//player.anims.play('hurt');
 	if (!burnStatus){
 		player.setTint(0xff0000); // set player color
@@ -209,8 +199,8 @@ function burnDamage(player, fire){
 }
 
 function updateHealth (){
-	text.setText(`Health: ${health}`);
-	if (health === 0){
+	text.setText(`Health: ${healthText}`);
+	if (healthText === 0){
 		 gameOver = true; 
 	}
 }
