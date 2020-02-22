@@ -6,7 +6,7 @@
  <tileset firstgid="1" name="TilesSet16x16(E)" tilewidth="16" tileheight="16" tilecount="8640" columns="108">
   <image source="TilesSet16x16(E).png" width="1728" height="1280"/>
  </tileset>
- <objectgroup id="3" name="Collectibles">
+ <objectgroup id="3" name="Collectibles" visible="0">
   <object id="1" x="117" y="150.5" width="48.3333" height="19">
    <text fontfamily="MS Shell Dlg 2" pixelsize="17" wrap="1" color="#000000" bold="1">Coins</text>
   </object>
@@ -14,7 +14,7 @@
    <text fontfamily="MS Shell Dlg 2" pixelsize="17" wrap="1" color="#000000" bold="1">Coins 6x6</text>
   </object>
  </objectgroup>
- <objectgroup id="4" name="SpawnPoint">
+ <objectgroup id="4" name="SpawnPoint" visible="0">
   <object id="6" x="87.8333" y="691.833" width="144.333" height="29">
    <text pixelsize="18" wrap="1" color="#ffff00" bold="1">Spawn Point</text>
   </object>
