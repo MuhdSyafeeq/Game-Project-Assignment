@@ -23,13 +23,18 @@ var game = new Phaser.Game(config);
 
 function preload()
 {
+    //Clearing Cache
+    //this.textures.remove('level1');
+
     // --> Background
-    this.load.image('bg', 'assets/games/starstruck/background.png');
+    this.load.image('bg', 'assets/games/starstruck/4.png');
+    this.load.image('bg2', 'assets/games/starstruck/3.png');
     // --> Background
 
     // --> TileMaps
-    this.load.tilemapTiledJSON('level1', 'assets/games/starstruck/level1-1.json');
-    this.load.image('imageTile', 'assets/games/starstruck/tiles-1.png');
+    this.load.tilemapTiledJSON('level1', 'assets/Levels/levelA5.json');
+    this.load.image("TilesSet16x16", 'assets/Levels/TilesSet16x16(E).png');
+    this.load.image("Door", 'assets/Levels/doors.png');
     // --> TileMaps
 
     // --> Player
@@ -42,6 +47,8 @@ function preload()
     // --> Collectibles
     this.load.image('star2', 'assets/games/starstruck/star2.png');
     // --> Collectibles
+
+    this.load.audio('BackMusic', 'assets/games/starstruck/BackgroundMsc.wav');
 }
 
 var bat;
@@ -60,20 +67,18 @@ function create()
 {
     // --> Background
     var bg = this.add.image(0, 0, 'bg').setOrigin(0, 0);
-            /*
-    var bg = {};
-    for (var counter = 0; counter < 7; counter++)
-    {
-        bg = this.add.image(counter * 160, 0, 'bg').setOrigin(0, 0);
-    }
-            */
+    var bg2 = this.add.image(0, 0, 'bg2').setOrigin(0, 0);
+    var music = this.sound.add('BackMusic');
+    music.play();
     // --> Background
 
     // --> TileMaps
     var map = this.make.tilemap({ key: 'level1' });
-    var tileset = map.addTilesetImage('tiles-1', 'imageTile');
-    var layer = map.createStaticLayer('World', tileset);
-    layer.setCollisionByExclusion([-1, 13, 14, 15, 46, 47, 48, 49, 52], true);
+    var tileset = map.addTilesetImage("TilesSet16x16(E)", "TilesSet16x16");
+    var tileset2 = map.addTilesetImage("doors", "Door")
+    var layer = map.createStaticLayer("World Background", tileset);
+    layer = map.createStaticLayer("Player Path", tileset);
+    layer.setCollisionByExclusion([-1], true);
     // 13, 14 small Cactus, 48 spiky tree
     //layer = this.physics.add.staticGroup();
     // --> TileMaps
@@ -107,6 +112,7 @@ function create()
     // --> Player
 
     // --> Entities
+    //TEST
     // --> Entities
 
     
@@ -135,8 +141,8 @@ function create()
     // ---> Score Marks
 
     // --> Camera
-    this.cameras.main.setBounds(0, 0, 1024, 1024);
-    this.physics.world.setBounds(0, 0, 1024, 1024);
+    this.cameras.main.setBounds(0, 0, 1600, 1200);
+    this.physics.world.setBounds(0, 0, 1600, 1200);
     this.cameras.main.startFollow(player, true, 0.05, 0.05);
     // --> Camera
 
@@ -174,17 +180,8 @@ function update() {
         if (jumpLimit == 2 || jumpLimit == 1)
         {
             player.setVelocityY(-450);
-            jumpLimit -= 1;
-        }
-
-        if (jumpLimit < 2)
-        {
-            cooldown = 60;
-        }
-
-        if (cooldown == 0)
-        {
-            jumpLimit += 1;
+            cooldown--;
+            //jumpLimit -= 1;
         }
     }
 
